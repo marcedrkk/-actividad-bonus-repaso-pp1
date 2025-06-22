@@ -1,0 +1,205 @@
+/* Reset de estilos predeterminados */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Fondo general de la página */
+body {
+    font-family: 'Poppins', sans-serif; /* Fuente más suave y moderna */
+    background-color: #f4ebfc; /* Color de fondo morado pastel */
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Estilo del header */
+header {
+    background: #b39ddb; /* Morado pastel */
+    color: #fff;
+    text-align: center;
+    padding: 40px 0;
+    border-bottom: 5px solid #7e57c2; /* Morado más fuerte para el borde */
+    border-radius: 0 0 50px 50px; /* Bordes redondeados */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-size: 3.5em;
+    margin-bottom: 10px;
+    font-weight: bold;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+header p {
+    font-size: 1.2em;
+}
+
+/* Estilo del menú de navegación */
+nav ul {
+    display: flex;
+    justify-content: center;
+    background-color: #fff;
+    margin-top: 0;
+    padding: 15px 0;
+    border-radius: 50px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+nav ul li {
+    list-style: none;
+    margin: 0 25px;
+}
+
+nav ul li a {
+    color: #7e57c2; /* Morado más oscuro */
+    text-decoration: none;
+    font-size: 1.2em;
+    padding: 10px 15px;
+    border-radius: 25px;
+    transition: background-color 0.3s, transform 0.2s;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    background-color: #b39ddb; /* Morado pastel */
+    color: white;
+    transform: scale(1.1); /* Efecto de aumento */
+}
+
+/* Estilo de las secciones */
+.section {
+    display: none;
+    padding: 40px;
+    margin-top: 20px;
+    border-radius: 30px;
+    background-color: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.active {
+    display: block;
+}
+
+.section p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    color: #7e57c2; /* Morado más oscuro */
+}
+
+/* Estilos del formulario */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 400px;
+    margin: 0 auto;
+    background-color: #f9f0ff; /* Fondo suave morado */
+    padding: 20px;
+    border-radius: 25px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+    font-size: 1.1em;
+    margin-bottom: 5px;
+    color: #7e57c2; /* Morado oscuro */
+}
+
+form input {
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 2px solid #7e57c2; /* Morado oscuro */
+    border-radius: 25px;
+    font-size: 1.1em;
+    transition: border-color 0.3s ease;
+}
+
+form input:focus {
+    border-color: #b39ddb; /* Morado pastel al enfocar */
+    outline: none;
+}
+
+form select {
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 2px solid #7e57c2; /* Morado oscuro */
+    border-radius: 25px;
+    font-size: 1.1em;
+    background-color: white;
+    transition: border-color 0.3s ease;
+}
+
+form select:focus {
+    border-color: #b39ddb; /* Morado pastel al enfocar */
+    outline: none;
+}
+
+/* Botón de envío del formulario */
+form button {
+    padding: 15px;
+    background-color: #7e57c2; /* Morado oscuro */
+    color: white;
+    font-size: 1.1em;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s;
+}
+
+form button:hover {
+    background-color: #b39ddb; /* Morado pastel */
+    transform: scale(1.05); /* Efecto de aumento */
+}
+
+/* Estilos para la imagen de la sección de inicio */
+#Inicio img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    text-align: center;
+}
+
+/* Estilo para la sección de ayuda */
+#Ayuda {
+    background-color: #fff;
+    border: 2px dashed #7e57c2; /* Borde discontinuo morado oscuro */
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#Ayuda p {
+    font-size: 1.2em;
+    color: #7e57c2; /* Morado oscuro */
+}
+
+/* Ajustes para pantallas pequeñas */
+@media screen and (max-width: 768px) {
+    header h1 {
+        font-size: 2.5em;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    .section {
+        padding: 20px;
+    }
+
+    form {
+        max-width: 90%;
+    }
+
+    form input, form button {
+        width: 100%;
+    }
+}
